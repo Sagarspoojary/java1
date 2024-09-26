@@ -5,7 +5,7 @@ class Car{
     private String model;
     private int year;
     private String color;
-    Car(String mk, String md, int yr, String clr){  //constructor
+    Car(String mk, String md, int yr, String clr){ 
         this.make=mk;
         this.model=md;
         this.year=yr;
