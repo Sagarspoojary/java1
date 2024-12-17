@@ -1,25 +1,45 @@
-
-
-public class M4 {
-	public static String reverse(String s1){
-		String s2="";
-		int len1=s1.length();
-		for(int i=0;i<len1;i++){
-			s2=s2+s1.substring(len1-(i+1),len1-i);
-				
-			}
-			return s2;
-		}
-
-	public static void main(String[] args) {
-		String result="";
-		
-		result=reverse("Sagar");
-		System.out.println(result);
-		
-		System.out.println(reverse("Manoj"));
-		
-
-	}
-
+class Shape{
+    public void draw(){
+        System.out.println("drawing a shape");}
+    public void erase(){
+        System.out.println("erasing a shape");}}
+class Circle extends Shape{
+    public void draw(){
+            System.out.println("drawing a circle");}
+    public void erase(){
+            System.out.println("erasing a circle");}}
+    
+class Triangle extends Shape{
+    public void draw(){
+        System.out.println("drawing a triangle");}
+    public void erase(){
+            System.out.println("erasing a triangle");}}
+class Square extends Shape{
+    public void draw(){
+        System.out.println("drawing a square");}
+    public void erase(){
+            System.out.println("erasing a square");}}
+public class M4{
+    public static void main(String[] args){
+        Shape[] shapes=new Shape[3];
+        shapes[0]=new Circle();
+        shapes[1]=new Triangle();
+        shapes[2]=new Square();
+        for(int i=0;i<shapes.length;i++){
+            shapes[i].draw();
+            shapes[i].erase();
+            System.out.println("___________");
+        }
+        
+        
+        
+        
+        
+    }
 }
+
+        
+
+
+    
+ 
